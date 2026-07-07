@@ -1,0 +1,16 @@
+# Netlify configuration file for Xibai Feng Wei Yuan Restaurant website
+# This file streamlines deployment on Netlify
+
+[build]
+  # The build command to generate static files
+  command = "npm run build"
+  
+  # The directory where Vite outputs compiled production assets
+  publish = "dist"
+
+[[redirects]]
+  # Single Page Application (SPA) redirect rule
+  # Redirects all traffic to index.html so routes/anchors are handled gracefully
+  from = "/*"
+  to = "/index.html"
+  status = 200

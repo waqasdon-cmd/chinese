@@ -1,0 +1,6 @@
+{
+  "name": "Xibai Feng Wei Yuan",
+  "description": "Premium Chinese restaurant in Islamabad, Pakistan, offering authentic Chinese cuisine, handcrafted dumplings, fresh noodles, and traditional signature dishes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

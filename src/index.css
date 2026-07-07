@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  /* Subtle Ken-Burns image panning effect for hero background */
+  @keyframes subtle-zoom {
+    0% {
+      transform: scale(1.02) translate(0px, 0px);
+    }
+    50% {
+      transform: scale(1.06) translate(-5px, -5px);
+    }
+    100% {
+      transform: scale(1.02) translate(0px, 0px);
+    }
+  }
+
+  .animate-subtle-zoom {
+    animation: subtle-zoom 24s infinite ease-in-out;
+  }
+
+  /* Custom utility to completely hide native horizontal scrollbars */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
